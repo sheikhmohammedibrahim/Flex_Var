@@ -37,19 +37,19 @@ body {
 /* FLEX DIRECTION START HERE*/
 .main {
   display: grid;
-  grid-template-columns: auto auto auto ;
+  grid-template-columns: auto auto auto;
   gap: 10px;
   /*grid-template-rows: 1fr 2fr;*/
   justify-content: start;
-  justify-content: end ;
-  justify-content: space-around ;
-  justify-content: space-evenly ;
+  justify-content: end;
+  justify-content: space-around;
+  justify-content: space-evenly;
   height: 600px;
   align-content: start;
   align-content: end;
   align-content: space-around;
   align-content: space-between;
- }
+}
 .child {
   background: var(--child);
   /*width: 100%;*/
@@ -65,8 +65,9 @@ body {
   border-style: solid;
   border-width: 4px;
   border-color: lime;
-  border-radius: 10px;}
- /* margin-bottom: 5px;
+  border-radius: 10px;
+}
+/* margin-bottom: 5px;
   margin-top: 5px;
   margin-left: 5px;
   margin-right: 5px;*/

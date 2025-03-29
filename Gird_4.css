@@ -39,15 +39,13 @@ body {
 /* FLEX DIRECTION START HERE*/
 .main {
   display: grid;
-  grid-template-columns: auto auto auto ;
+  grid-template-columns: auto auto auto;
   gap: 10px;
   grid-template-rows: 1fr 2fr;
   justify-content: start;
-  justify-content: end ;
-  justify-content: space-around ;
-  justify-content: space-between ;
- 
-
+  justify-content: end;
+  justify-content: space-around;
+  justify-content: space-between;
 }
 .child {
   background: var(--child);
@@ -64,13 +62,13 @@ body {
   border-style: solid;
   border-width: 4px;
   border-color: lime;
-  border-radius: 10px;}
+  border-radius: 10px;
+}
 
- /* margin-bottom: 5px;
+/* margin-bottom: 5px;
   margin-top: 5px;
   margin-left: 5px;
   margin-right: 5px;*/
-
 
 /*
   .main {
@@ -107,7 +105,6 @@ body {
   color: var(--hColor);
 }
 .child p {
-
   display: none; /* THIS IS USE FOR NOT SHOW IN CHILD <P> ON BROWSER/WEBSITE. */
   margin-bottom: 2px;
   margin-top: 2px;

@@ -39,9 +39,9 @@ body {
   display: grid;
   grid-template-columns: auto auto auto;
   gap: 10px;
-  grid-auto-rows: minmax( 80px auto);
+  grid-auto-rows: minmax(80px auto);
   /* grid-template-rows: 1fr 2fr; */
- 
+
   /* justify-content: start;
   justify-content: end ;
   justify-content: space-around ;

@@ -40,6 +40,9 @@ body {
   gap: 10px;
   grid-auto-rows: minmax(80px auto);
   grid-template-columns: auto auto auto;
+  flex-wrap: wrap;
+  flex-flow: row-reverse wrap-reverse ;
+  justify-content: space-between;
 }
 .child {
   background: var(--child);

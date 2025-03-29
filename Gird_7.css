@@ -38,12 +38,12 @@ body {
 .main {
   display: grid;
   gap: 10px;
-  grid-auto-rows: minmax( 80px auto);
+  grid-auto-rows: minmax(80px auto);
   grid-template-columns: auto auto auto;
-  grid-template-areas: 'header  header' 'footer  footer';
+  grid-template-areas: "header  header" "footer  footer";
 
   /* grid-template-rows: 1fr 2fr; */
- 
+
   /* justify-content: start;
   justify-content: end ;
   justify-content: space-around ;
@@ -111,11 +111,11 @@ body {
 }
 
 /* THIS AREA START COLUM AND ROW STYLE */
-:nth-child(1){
+:nth-child(1) {
   grid-area: header;
 }
 
-:nth-child(6){
+:nth-child(6) {
   grid-area: footer;
 }
 
@@ -123,8 +123,8 @@ body {
 :nth-child(5) p,
 :nth-child(6) p {
   display: none; THIS IS USE FOR NOT SHOW IN CHILD <P> ON BROWSER/WEBSITE. */
- .child p {
-    margin-bottom: 2px;
+.child p {
+  margin-bottom: 2px;
   margin-top: 2px;
   margin-left: 2px;
   margin-right: 2px;

@@ -39,7 +39,7 @@ body {
 /* FLEX DIRECTION START HERE*/
 .main {
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr ;
+  grid-template-columns: 2fr 1fr 1fr;
 }
 .child {
   background: var(--child);
