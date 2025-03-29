@@ -1,0 +1,124 @@
+:root {
+  --bodyColor: hsla(303, 100%, 50%, 0.637);
+  --pColor: #dbf1ef;
+  --backgroundDiv: rgb(255, 166, 0);
+  --aColor: rgb(255, 166, 0);
+  --mainDiv: #a6ff00;
+  --hColor: #dbf1ef;
+  --child: #07a563;
+}
+*,
+*::after,
+::before {
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bodyColor);
+  margin: 0;
+}
+.main_area {
+  width: 90%;
+  background: var(--aColor);
+  color: whitesmoke;
+  padding-bottom: 1px;
+  padding-top: 1px;
+  padding-right: 1px;
+  padding-left: 1px;
+  border-style: solid;
+  border-width: 4px;
+  border-color: lime;
+  border-radius: 10px;
+  margin-bottom: 1px;
+  margin-top: 1px;
+  margin-left: 1px;
+  margin-right: 1px;
+}
+/* FLEX DIRECTION START HERE*/
+.main {
+  display: grid;
+  gap: 10px;
+  grid-auto-rows: minmax(80px auto);
+  grid-template-columns: auto auto auto;
+}
+.child {
+  background: var(--child);
+
+  /* THIS IS FOR NEW FILE */
+  flex-basis: 30%;
+  box-sizing: border-box;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  padding-right: 5px;
+  padding-left: 5px;
+  border-style: solid;
+  border-width: 4px;
+  border-color: lime;
+  border-radius: 10px;
+}
+
+/* flex-direction: column; */
+/* THIS IS FOR NEW FILE */
+/*flex-flow: row wrap;
+  justify-content: space-between;
+  }
+  */
+.main_area h2 {
+  text-align: center;
+  background: var(--mainDiv);
+  padding: 2px;
+  color: var(--hColor);
+}
+.child a {
+  text-align: left;
+  background: var(--backgroundDiv);
+  padding-bottom: 15px;
+  padding-top: 15px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+  color: black;
+  text-decoration: none;
+}
+.child h3 {
+  color: var(--hColor);
+}
+
+/* THIS AREA START COLUM AND ROW STYLE */
+/* :nth-child(1){
+  grid-area: header;
+}
+
+:nth-child(6){
+  grid-area: footer;
+} */
+
+:nth-child(1) {
+  grid-row-start: 1;
+  grid-row-end: span 6;
+}
+
+:nth-child(9) {
+  grid-row-start: 2;
+  grid-row-end: span 5;
+}
+
+/* :nth-child(4) p,
+:nth-child(5) p,
+:nth-child(6) p {
+  display: none; THIS IS USE FOR NOT SHOW IN CHILD <P> ON BROWSER/WEBSITE. */
+.child p {
+  margin-bottom: 2px;
+  margin-top: 2px;
+  margin-left: 2px;
+  margin-right: 2px;
+  padding-bottom: 2px;
+  padding-top: 2px;
+  padding-right: 2px;
+  padding-left: 2px;
+  color: var(--pColor);
+  text-align: left;
+}
