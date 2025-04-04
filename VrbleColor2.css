@@ -1,0 +1,177 @@
+:root {
+  /* BODY COLOR+ HEADER BAR */
+  --bodyClor: hsla(120, 93%, 16%, 0.089);
+  --HdbarClor: blue;
+  /* DIV */
+  --mainDiv: #f38370;
+  --idDiv: yellow;
+  --ChldDiv: hsla(125, 93%, 49%, 0.123);
+  --ClasDiv: hsla(9, 100%, 50%, 0.089);
+  --AnyClasNme: hsla(182, 95%, 50%, 0.096);
+  /* ASIDE COLOR + FOTOR */
+  --AsideDiv: #5eff00;
+  --FotrClor: #ffff00;
+  /* LI, H2, a, p, */
+  --liClor: green;
+  --hClor: rgb(240, 8, 248);
+  --aClor: rgb(241, 12, 12);
+  --pClor: rgb(9, 12, 240);
+  /* BORDER COLOR */
+  --brder: rgb(255, 0, 128);
+}
+
+*,
+*::after,
+::before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bodyClor);
+  background-image: url(../Img/nature.gif);
+  margin: 0;
+}
+
+.main_area {
+  width: 90%;
+  background: var(--mainDiv);
+  color: var(--aClor);
+  background-image: url(../Img/sea.gif);
+  padding-bottom: 1px;
+  padding-top: 1px;
+  padding-right: 1px;
+  padding-left: 1px;
+
+  border-style: solid;
+  border-width: 4px;
+  border-color: var(--brder);
+  border-radius: 10px;
+
+  margin-bottom: 1px;
+  margin-top: 1px;
+  margin-left: 1px;
+  margin-right: 1px;
+}
+
+.title {
+  text-align: center;
+}
+
+/* FLEX DIRECTION START HERE*/
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  /*flex-direction: column;*/
+}
+
+.child {
+  box-sizing: border-box;
+  background: var(--ChldDiv);
+
+  color: var(--aClor);
+  text-align: center;
+  /*width: 100%;*/
+  /* horizontal alien */
+  /*display: inline-block ;*/
+
+  padding-bottom: 5px;
+  padding-top: 5px;
+  padding-right: 5px;
+  padding-left: 5px;
+
+  border-style: solid;
+  border-width: 4px;
+  border-color: var(--brder);
+  border-radius: 10px;
+
+  margin-bottom: 5px;
+  margin-top: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+  flex-basis: 31%;
+}
+
+.title h2 {
+  box-sizing: border-box;
+  display: inline-block;
+  text-align: center;
+  background: var(--ClasDiv);
+  color: var(--aClor);
+
+  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+
+  border-style: solid;
+  border-width: 2px;
+  border-color: var(--brder);
+  border-radius: 8px;
+}
+
+.child h3 {
+  box-sizing: border-box;
+  display: inline-block;
+  background: var(--AnyClasNme);
+  color: var(--hClor);
+
+  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+
+  border-style: solid;
+  border-width: 1px;
+  border-color: var(--brder);
+  border-radius: 8px;
+}
+
+.child p {
+  margin-bottom: 2px;
+  margin-top: 2px;
+  margin-left: 2px;
+  margin-right: 2px;
+
+  padding-bottom: 2px;
+  padding-top: 2px;
+  padding-right: 2px;
+  padding-left: 2px;
+  color: var(--pClor);
+  text-align: left;
+}
+
+.child a {
+  background: var(--bodyClor);
+  color: var(--aClor);
+  font-weight: bold;
+  font-size: 20px;
+
+  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+
+  margin-bottom: 1px;
+  margin-top: 1px;
+  margin-left: 1px;
+  margin-right: 1px;
+
+  border-style: solid;
+  border-width: 2px;
+  border-color: var(--brder);
+  border-radius: 8px;
+
+  text-decoration: none;
+  text-align: center;
+}
+
+.child a:hover{
+  background: green;
+  color: whitesmoke;
+}
+
+.title h2:hover{
+  background: green;
+  color: whitesmoke;
+}
